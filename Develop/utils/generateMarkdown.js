@@ -2,13 +2,11 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   // Check the license value and return the corresponding badge
-  // You can customize this function to include the specific badges you need
-  switch (license) {
+    switch (license) {
     case 'MIT':
       return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
     case 'Apache 2.0':
       return '[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
-    // Add more cases for other licenses as needed
     default:
       return '';
   }
@@ -18,13 +16,12 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   // Check the license value and return the corresponding link
-  // You can customize this function to include the specific license links you need
-  switch (license) {
+    switch (license) {
     case 'MIT':
       return 'https://opensource.org/licenses/MIT';
     case 'Apache 2.0':
       return 'https://opensource.org/licenses/Apache-2.0';
-    // Add more cases for other licenses as needed
+    // Note to sefl - add more cases for other licenses as needed
     default:
       return '';
   }
@@ -34,8 +31,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   // Check the license value and return the corresponding license section
-  // You can customize this function to include the specific license sections you need
-  switch (license) {
+    switch (license) {
     case 'MIT':
       return `
 ## License
@@ -48,7 +44,7 @@ This project is licensed under the [MIT License](${renderLicenseLink(license)}).
 
 This project is licensed under the [Apache License 2.0](${renderLicenseLink(license)}).
 `;
-    // Add more cases for other licenses as needed
+    // note to self - add more cases for other licenses as needed
     default:
       return '';
   }
